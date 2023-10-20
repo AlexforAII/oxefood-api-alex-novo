@@ -23,49 +23,51 @@ import lombok.Setter;
 @Entity
 @Table(name = "Entregador")
 @Where(clause = "habilitado = true")
-public class Entregador extends EntidadeAuditavel  {
-    
+public class Entregador extends EntidadeAuditavel {
 
   @Column
-   private String nome;
+  private String nome;
 
- @Column
-   private LocalDate dataNascimento;
+  @Column
+  private LocalDate dataNascimento;
 
-   @Column
-   private int RG;
+  @Column
+  private int RG;
 
- @Column
-   private String cpf;
+  @Column
+  private String cpf;
 
- @Column
-   private String foneCelular;
+  @Column
+  private String foneCelular;
 
- @Column
-   private String foneFixo;
+  @Column
+  private String foneFixo;
 
-   @Column
-   private int QTDEntregasRealizadas;
+  @Column
+  private int QTDEntregasRealizadas;
 
-   @Column
-   private boolean ValorPorFrete;
+  @Column
+  private boolean ValorPorFrete;
 
-    @Column
-   private String Rua;
+  @Column
+  private String Rua;
 
-   @Column
-   private int Numero;
+  @Column
+  private int Numero;
 
-    @Column
-   private String Bairro;
+  @Column
+  private String Bairro;
 
-   @Column
-   private String Cidade;
+  @Column
+  private String Cidade;
 
-   @Column
-   private int CEP;
+  @Column
+  private int CEP;
 
-   @Column
-   private String UF;
+  @Column
+  private String UF;
+
+  @Column
+  private String complemento;
 
 }

@@ -42,6 +42,7 @@ public class EntregadorRequest {
   private String Cidade;
   private int CEP;
   private String UF;
+  private String complemento;
 
   public Entregador build() {
 
@@ -60,8 +61,8 @@ public class EntregadorRequest {
         .Cidade(Cidade)
         .CEP(CEP)
         .UF(UF)
+        .complemento(complemento)
         .build();
   }
 
 }
-
