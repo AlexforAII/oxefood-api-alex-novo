@@ -47,19 +47,19 @@ public class Entregador extends EntidadeAuditavel {
   private int QTDEntregasRealizadas;
 
   @Column
-  private boolean ValorPorFrete;
+  private boolean valorPorFrete;
 
   @Column
-  private String Rua;
+  private String rua;
 
   @Column
-  private int Numero;
+  private int numero;
 
   @Column
-  private String Bairro;
+  private String bairro;
 
   @Column
-  private String Cidade;
+  private String cidade;
 
   @Column
   private int CEP;
@@ -69,5 +69,12 @@ public class Entregador extends EntidadeAuditavel {
 
   @Column
   private String complemento;
+
+  public Object getRG() {
+    return null;
+  }
+
+  public void setRG(Object rg) {
+  }
 
 }

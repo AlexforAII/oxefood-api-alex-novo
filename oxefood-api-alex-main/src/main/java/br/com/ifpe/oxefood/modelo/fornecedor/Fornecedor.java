@@ -25,6 +25,7 @@ import lombok.Setter;
 @Where(clause = "habilitado = true")
 public class Fornecedor extends EntidadeAuditavel {
 
+//criar coluna na tebela
   @Column
   private String nome;
 

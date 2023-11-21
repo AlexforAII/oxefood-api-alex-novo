@@ -2,6 +2,7 @@ package br.com.ifpe.oxefood.modelo.produto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Where;
@@ -22,11 +23,14 @@ import lombok.Setter;
 @Table(name = "Fornecedor")
 @Where(clause = "habilitado = true")
 public class Produto extends EntidadeAuditavel {
+  @ManyToOne
+  private CategoriaProduto categoria;
+
   @Column
   private String titulo;
 
   @Column
-  private String codProduto;
+  private String codigoProduto;
 
   @Column
   private String descricao;

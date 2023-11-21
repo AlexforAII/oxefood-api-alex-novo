@@ -31,15 +31,15 @@ public class EntregadorRequest {
 
   private int QTDEntregasRealizadas;
 
-  private boolean ValorPorFrete;
+  private boolean valorPorFrete;
 
-  private String Rua;
+  private String rua;
 
-  private int Numero;
+  private int numero;
 
-  private String Bairro;
+  private String bairro;
 
-  private String Cidade;
+  private String cidade;
   private int CEP;
   private String UF;
   private String complemento;
@@ -54,11 +54,11 @@ public class EntregadorRequest {
         .foneCelular(foneCelular)
         .foneFixo(foneFixo)
         .QTDEntregasRealizadas(QTDEntregasRealizadas)
-        .ValorPorFrete(ValorPorFrete)
-        .Rua(Rua)
-        .Numero(Numero)
-        .Bairro(Bairro)
-        .Cidade(Cidade)
+        .valorPorFrete(valorPorFrete)
+        .rua(rua)
+        .numero(numero)
+        .bairro(bairro)
+        .cidade(cidade)
         .CEP(CEP)
         .UF(UF)
         .complemento(complemento)

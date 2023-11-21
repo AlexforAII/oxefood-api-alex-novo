@@ -10,8 +10,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@Builder
+@Data // gerar get set
+@Builder // gerar builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class FornecedorRequest {

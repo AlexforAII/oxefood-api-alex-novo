@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class FornecedorService {
   @Autowired
   private FornecedorRepository repository;
-
+// metudo cadastrar fornecedor
   @Transactional
   public Fornecedor save(Fornecedor fornecedor) {
 
@@ -22,7 +22,7 @@ public class FornecedorService {
     fornecedor.setDataCriacao(LocalDate.now());
     return repository.save(fornecedor);
   }
-
+//listar fornecedores
   public List<Fornecedor> findAll() {
 
     return repository.findAll();

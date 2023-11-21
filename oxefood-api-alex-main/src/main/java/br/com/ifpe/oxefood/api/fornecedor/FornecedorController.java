@@ -21,21 +21,21 @@ import br.com.ifpe.oxefood.modelo.fornecedor.Fornecedor;
 import br.com.ifpe.oxefood.modelo.fornecedor.FornecedorService;
 
 @RestController
-@RequestMapping("/api/fornecedor")
+@RequestMapping("/api/fornecedor") // acessar a funcao da classe
 @CrossOrigin
 public class FornecedorController {
 
   @Autowired
   private FornecedorService fornecedorService;
 
-  @PostMapping
+  @PostMapping // cadastro no postman
   public ResponseEntity<Fornecedor> save(@RequestBody @Valid FornecedorRequest request) {
 
     Fornecedor fornecedor = fornecedorService.save(request.build());
     return new ResponseEntity<Fornecedor>(fornecedor, HttpStatus.CREATED);
   }
 
-  @GetMapping
+  @GetMapping // listar todos os fornecedor
   public List<Fornecedor> findAll() {
 
     return fornecedorService.findAll();
